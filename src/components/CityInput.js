@@ -4,7 +4,7 @@ import './styles/styles.css'
 class CityInput extends React.Component {
   render() {
     return (
-      <div className='city-input-container'>
+      <div>
         <ul className='city-input-list'>
           <li>
             <h3 className='city-input-header'>Enter a City and State</h3>
