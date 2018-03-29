@@ -1,0 +1,13 @@
+.main-header {
+  background-color:orangered;
+  height: 50px;
+  padding: 8px;
+}
+
+.main-title {
+  text-align: left;
+  vertical-align: top;
+  font-size: 30px;
+  width: 40%;
+  float: left;
+}

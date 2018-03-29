@@ -1,14 +1,22 @@
 import React from 'react';
-import './styles/styles.css' 
+import './styles/Header.css' 
+import PropTypes from 'prop-types';
 
-function Header(){ 
-  return (
-    <div>
-      <header className="main-header">
-        <h1 className="main-title">Header for Main.js</h1>
-      </header>
-    </div>
-  );
+class Header extends React.Component{ 
+  render() { 
+    return  (
+      <div>
+        <header className="main-header">
+          <h1 className="main-title">{this.props.displayText}</h1>
+          {this.props.children}
+        </header>
+      </div>
+    );
+  }
+}
+
+Header.propTypes = {
+  displayText: PropTypes.string.isRequired
 }
 
 export default Header;

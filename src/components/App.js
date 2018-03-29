@@ -6,8 +6,10 @@ class App extends Component {
   render() {
     return (
       <div>
-        <Header />
-        <CityInput />
+        <Header displayText='main header'>
+          <CityInput inputClass='horizontal' />
+        </Header> 
+        <CityInput inputClass='vertical' />
       </div>
     );
   }
