@@ -2,6 +2,7 @@ import React from 'react';
 import './styles/CityInput.css' 
 import PropTypes from 'prop-types';
 import axios from 'axios';
+import {Link} from 'react-router-dom';
 
 const APIKEY = 'fe60cbb8648c979c422e7c0dc22ce3cf';
 
@@ -51,9 +52,13 @@ class CityInput extends React.Component {
             </input>
           </li>
           <li className={this.props.inputClass}>
-            <button className={'city-input-button-' + this.props.inputClass}
-              onClick={this.handleSubmit} 
-            >Get Weather</button>
+            <Link className={'button ' + 'city-input-button-' + this.props.inputClass}
+                  to={{
+                    pathname: '/forecast',
+                    search: '?zip=' + this.state.city
+                  }}
+            >Get Weather
+            </Link>
           </li>
         </ul>
       </div>

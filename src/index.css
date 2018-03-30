@@ -11,5 +11,9 @@ body {
   height: 100%;
   width: 100%;
   font-family: sans-serif;
-  background-image: url('./components/images/pattern.svg');
+}
+
+#root {
+  height: 100%;
+  width: 100%;
 }

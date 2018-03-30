@@ -34,6 +34,8 @@ li.vertical {
   border-radius: 6%;
   border-color: green;
   padding: 5px;
+  position: relative;
+  top: .7em;
 }
 
 
@@ -43,7 +45,7 @@ li.vertical {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  align-items: flex-start;
+  align-items: baseline;
   list-style-type: none;
   float: right;
 }
