@@ -21,7 +21,7 @@ li.vertical {
 
 .city-input-input-vertical{
   height: 2em;
-  width: 20em;
+  width: 10em;
   border-width: 0;
 }
 
@@ -48,6 +48,7 @@ li.vertical {
   align-items: baseline;
   list-style-type: none;
   float: right;
+  width: 40%;
 }
 
 li.horizontal {
@@ -59,11 +60,13 @@ li.horizontal {
 
 .city-input-input-horizontal{
   height: 2em;
-  width: 20em;
+  width: 10em;
   border-width: 0;
 }
 
 .city-input-button-horizontal{
+  display: block;
+  white-space: nowrap;
   background-color: green;
   color: white;
   font-size: 1em;
@@ -73,5 +76,3 @@ li.horizontal {
   border-color: green;
   padding: 5px;
 }
-
-
