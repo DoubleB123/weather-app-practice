@@ -32,12 +32,17 @@ class Forecast extends React.Component {
         })
         console.log(data);
       });
+      */
     axios.get(forecastStr)
       .then(data => {
         console.log(data);
-      });
-      */
-
+        this.setState({
+          loading: false
+        })
+      })
+      .catch(err => {
+        console.warn(err);
+      })
   }
 
   render() {
