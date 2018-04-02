@@ -1,0 +1,16 @@
+.weather-list {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+li {
+    margin: .8em;
+}
+
+h2 {
+    text-align: center;
+}
