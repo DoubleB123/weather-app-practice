@@ -1,0 +1,10 @@
+.weather-stats{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+p {
+    text-align: center;
+}

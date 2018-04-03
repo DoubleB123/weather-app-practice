@@ -1,3 +1,8 @@
 .forecast {
     background-image: none;
 }
+
+a {
+    text-decoration: none;
+    color: black;
+}

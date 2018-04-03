@@ -1,6 +1,4 @@
 import React from 'react';
-import './styles/Header.css';
-import './styles/CityInput.css' ;
 import './styles/Forecast.css';
 import Header from './Header.js';
 import CityInput from './CityInput.js';
@@ -10,8 +8,6 @@ import queryString from 'query-string';
 import axios from 'axios';
 
 const APIKEY = 'fe60cbb8648c979c422e7c0dc22ce3cf';
-//assume user is in pst
-const timeDiff = 7;
 
 class Forecast extends React.Component {
   constructor(props) {
@@ -24,8 +20,9 @@ class Forecast extends React.Component {
   }
 
   getData() {
+    console.log('getting data');
     const parsed = queryString.parse(this.state.location.search);
-    const currentWeatherStr = 'http://api.openweathermap.org/data/2.5/weather?zip=' + parsed.zip +'&type=accurate&APPID=' + APIKEY;
+    //const currentWeatherStr = 'http://api.openweathermap.org/data/2.5/weather?zip=' + parsed.zip +'&type=accurate&APPID=' + APIKEY;
     const forecastStr = 'http://api.openweathermap.org/data/2.5/forecast?zip=' + parsed.zip + '&APPID=' + APIKEY;
 
       /*
@@ -1437,5 +1434,4 @@ const data =  {
   "request": {}
 }; 
 */
-
 export default Forecast;

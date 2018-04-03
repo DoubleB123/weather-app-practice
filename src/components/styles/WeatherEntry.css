@@ -1,15 +1,11 @@
-.weather-list-entry{
-
-}
-
-img {
+.weather-entry-image {
+    display: block;
     margin-left: auto;
     margin-right: auto;
-    display: block;
     height: 12em;
     width: 12em;
 }
 
-p {
+.weather-entry-p {
     text-align: center;
 }
