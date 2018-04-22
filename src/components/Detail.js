@@ -14,7 +14,7 @@ class Detail extends React.Component {
   render() {
     return (
       <div className='detail'>
-        <Header displayText='forecast header'>
+        <Header displayText='React Weather App'>
           <CityInput inputClass='horizontal' />
         </Header> 
         <div className='weather-stats'>

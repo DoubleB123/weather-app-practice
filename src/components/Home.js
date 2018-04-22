@@ -9,7 +9,7 @@ class Home extends React.Component {
   render() {
     return (
       <div className='home'>
-        <Header displayText='main header'>
+        <Header displayText='React Weather App'>
           <CityInput inputClass='horizontal' />
         </Header> 
         <CityInput inputClass='vertical' />

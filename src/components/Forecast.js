@@ -60,7 +60,7 @@ class Forecast extends React.Component {
   render() {
     return (
       <div className='forecast'>
-        <Header displayText='forecast header'>
+        <Header displayText='React Weather App'>
           <CityInput inputClass='horizontal' />
         </Header> 
         {this.state.loading && <Loading displayText='Loading'/>}

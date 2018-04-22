@@ -28,7 +28,7 @@ class CityInput extends React.Component {
           </li>
           <li className={this.props.inputClass}>
             <input className={'city-input-input-' + this.props.inputClass} 
-              type='text' placeholder='90254'
+              type='text' 
               value={this.state.city} onChange={this.handleChange}>
             </input>
           </li>
